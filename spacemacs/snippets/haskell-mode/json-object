@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: object [...] :: Value
+# key: json-object
+# contributor: Dom De Re
+# --
+object [
+  "$1" .= $0
+]

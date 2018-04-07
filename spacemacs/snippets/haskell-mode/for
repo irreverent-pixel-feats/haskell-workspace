@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: for _traversable _kleisli
+# key: for
+# contributor: Dom De Re
+# --
+for ${1:_traversable} \$ \\${2:x} -> do
+  $0

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: newtype Foo = Foo { bar :: T.Text } deriving (Show, Eq)
+# key: text-newtype
+# contributor: Dom De Re
+# --
+newtype ${1:Name} = $1 {
+    $2 :: T.Text
+  } deriving (Show, Eq)

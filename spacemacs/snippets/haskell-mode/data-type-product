@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: data Foo = Foo {...} deriving (Show, Eq)
+# key: data-type-product
+# contributor: Dom De Re
+# --
+data ${1:Name} = $1 { $0 }$2

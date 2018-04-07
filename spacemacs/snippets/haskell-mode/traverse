@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: traverse _function _traversable
+# key: traverse
+# contributor: Dom De Re
+# --
+traverse ${1:_kliesli} ${2:_traversable}

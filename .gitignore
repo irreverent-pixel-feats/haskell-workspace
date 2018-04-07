@@ -1,0 +1,5 @@
+/nvim/site/*
+/cabal/*
+/mafia/*
+/emacs-elpa/*
+/emacs-cache/*

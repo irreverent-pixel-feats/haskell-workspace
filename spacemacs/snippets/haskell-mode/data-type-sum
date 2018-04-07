@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: data Foo = Foo | ... deriving (Show, Eq)
+# key: data-type-sum
+# contributor: Dom De Re
+# --
+data ${1:Name} =
+    $3
+  | $0
+    $2

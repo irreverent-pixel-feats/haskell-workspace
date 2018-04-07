@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: foo :: Foo -> Bar; foo x = ...
+# key: function
+# contributor: Dom De Re
+# --
+$1 :: $2
+$1 $3 = $0

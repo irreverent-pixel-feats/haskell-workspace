@@ -1,0 +1,21 @@
+#!/bin/sh -eux
+
+SSH_CONFIG="${1:?"The location of SSH config and keys etc..."}"
+
+WORKSPACE_DIR="${2:?"The directory for your workspace"}"
+
+PROJECT_DIR="${3:?"A directory to actually mount, containing the project you want to work on"}"
+
+IMAGE="irreverentpixelfeats/dev-haskell:ubuntu_xenial-8.0.2_1.24-20180406170635-44b67e2"
+
+docker run -ti --rm \
+  --volume "${SSH_CONFIG}:/root/.ssh" \
+  --volume "${WORKSPACE_DIR}/nvim:/root/.config/nvim" \
+  --volume "${WORKSPACE_DIR}/emacs-cache:/root/.emacs.d/cache" \
+  --volume "${WORKSPACE_DIR}/emacs-elpa:/root/.emacs.d/elpa" \
+  --volume "${WORKSPACE_DIR}/spacemacs:/root/.spacemacs.d" \
+  --volume "${WORKSPACE_DIR}/mafia:/root/.mafia" \
+  --volume "${WORKSPACE_DIR}/cabal:/root/.cabal" \
+  --volume "${PROJECT_DIR}:/root/mnt" \
+  ${IMAGE} \
+  "entrypoint"

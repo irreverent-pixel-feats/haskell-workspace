@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: module Foo (module X) where
+# key: module.re-exports
+# contributor: Dom De Re
+# --
+module $1 (module ${2:X}) where

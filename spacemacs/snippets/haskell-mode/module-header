@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: Haskell Module Header
+# key: module-header-haskell
+# contributor: Dom De Re
+# --
+-------------------------------------------------------------------
+-- |
+-- Module       : ${1:Some.Module}
+-- Copyright    : (C) ${2:2017}
+-- License      : ${3:BSD-style} (see the file etc/LICENSE.md)
+-- Maintainer   : ${4:Name}
+--
+-------------------------------------------------------------------

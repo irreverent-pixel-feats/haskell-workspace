@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: {-# LANGUAGE SomeExtension #-}
+# key: language-pragma
+# contributor: Dom De Re
+# --
+{-# LANGUAGE ${1:NoImplicitPrelude} #-}
